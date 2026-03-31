@@ -10,12 +10,10 @@
 <style>
 :root {
   --primary:#00F5E1;
-  --bg:#000;
-  --text:#fff;
 }
 
-* {margin:0;padding:0;box-sizing:border-box;}
-body {font-family:'Inter',sans-serif;background:#000;color:#fff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:#000;color:#fff;}
 
 /* HEADER */
 header{
@@ -27,69 +25,62 @@ header{
   position:fixed;
   width:100%;
   background:rgba(0,0,0,0.9);
-  backdrop-filter: blur(10px);
-  z-index:1000;
 }
 
-.logo img{
-  height:95px;
-}
+.logo img{height:95px;}
 
-nav{
-  margin-left:auto;
-  display:flex;
-  gap:30px;
-}
-
-nav a{
-  color:#fff;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:600;
-  letter-spacing:1px;
-}
+nav{margin-left:auto;display:flex;gap:30px;}
+nav a{color:#fff;text-decoration:none;font-size:13px;}
 
 /* HERO */
 .hero{
   padding:180px 5% 120px;
-  background:linear-gradient(90deg,#000 40%,transparent),
-  url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2000') center/cover;
 }
 
-.headline{
-  font-size:clamp(2.5rem,5vw,4rem);
-  font-weight:700;
-  max-width:900px;
-  line-height:1.2;
+/* SECTION */
+.section{padding:80px 5%;border-top:1px solid #111;}
+
+/* SERVICES */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:1px;
+  background:#222;
 }
 
-.line{
-  opacity:0;
-  transform:translateY(40px);
-  display:block;
+.s-item{
+  padding:40px;
+  background:#000;
+  cursor:pointer;
 }
 
-.highlight{color:var(--primary);}
-
-.line:nth-child(1){
-  animation:reveal 1s ease forwards;
-  animation-delay:.3s;
+/* SOC */
+.soc-box{
+  border:1px solid #111;
+  padding:25px;
+  border-radius:10px;
+  transition:0.3s;
+  background:#050505;
 }
-.line:nth-child(2){
-  animation:reveal 1s ease forwards;
-  animation-delay:1.2s;
-}
-
-@keyframes reveal{
-  to{opacity:1;transform:translateY(0);}
+.soc-box:hover{
+  border-color:var(--primary);
+  transform:translateY(-5px);
 }
 
-.hero p{
-  margin-top:25px;
-  font-size:1.2rem;
-  color:#ccc;
-  max-width:650px;
+/* WHATS */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
+.whatsapp img{width:30px;}
 
 .btn{
   display:inline-block;
@@ -98,165 +89,6 @@ nav a{
   color:#000;
   padding:12px 25px;
   border-radius:5px;
-  text-decoration:none;
-  font-weight:700;
-}
-
-/* SECTIONS */
-.section{
-  padding:80px 5%;
-  border-top:1px solid #111;
-}
-
-/* VALUE */
-.value{
-  display:flex;
-  gap:40px;
-}
-
-.value div{flex:1;}
-.value h3{color:var(--primary);margin-bottom:10px;}
-
-/* SERVICES */
-<section id="soc-details" style="display:none; padding:80px 5%; border-top:1px solid #111;">
-
-  <h2 style="margin-bottom:20px;">SOC 24x7 – Security Operations Center</h2>
-
-  <p style="color:#aaa; max-width:900px; margin-bottom:40px;">
-    Nosso SOC 24x7 opera continuamente para detectar, analisar e responder a ameaças cibernéticas em tempo real.
-    Combinamos tecnologia avançada, inteligência de ameaças e especialistas altamente qualificados para proteger
-    ambientes críticos e garantir a continuidade do negócio.
-  </p>
-::contentReference[oaicite:0]{index=0}
-  <!-- IMAGENS -->
-<div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:30px;
-  margin-top:40px;
-  .soc-box{
-  border:1px solid #111;
-  padding:25px;
-  border-radius:10px;
-  transition:0.3s;
-  background:#050505;
-}
-
-.soc-box:hover{
-  border-color:var(--primary);
-  transform:translateY(-5px);
-}
-">
-
-  <div class="soc-box">
-    <h3>Monitoramento Contínuo</h3>
-    <p>Visibilidade em tempo real de eventos de segurança, com correlação de logs e análise comportamental.</p>
-  </div>
-
-  <div class="soc-box">
-    <h3>Detecção de Ameaças</h3>
-    <p>Identificação proativa de atividades maliciosas utilizando SIEM, EDR e inteligência de ameaças.</p>
-  </div>
-
-  <div class="soc-box">
-    <h3>Resposta a Incidentes</h3>
-    <p>Atuação imediata para conter, erradicar e mitigar impactos de ataques cibernéticos.</p>
-  </div>
-
-  <div class="soc-box">
-    <h3>Threat Intelligence</h3>
-    <p>Uso de inteligência global para antecipar ameaças e fortalecer a postura de segurança.</p>
-  </div>
-
-  <div class="soc-box">
-    <h3>Automação e Orquestração</h3>
-    <p>Execução automatizada de playbooks para resposta rápida e consistente.</p>
-  </div>
-
-  <div class="soc-box">
-    <h3>Relatórios e Métricas</h3>
-    <p>Dashboards executivos com indicadores de risco, incidentes e maturidade.</p>
-  </div>
-
-</div>
-</section>
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:1px;
-  background:#222;
-}
-
-.s-item{
-  padding:40px;
-  background:#000;
-}
-
-.s-item p{color:#aaa;margin-bottom:20px;}
-
-.learn{
-  color:var(--primary);
-  text-decoration:none;
-}
-
-/* PARTNERS */
-.partners-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:40px;
-}
-
-.partner{
-  border:1px solid #111;
-  padding:30px;
-  border-radius:8px;
-  transition:0.3s;
-}
-
-.partner:hover{
-  border-color:var(--primary);
-  transform:translateY(-5px);
-}
-
-.partner img{
-  height:28px;
-  margin-bottom:20px;
-}
-
-.partner p{
-  color:#aaa;
-  font-size:0.95rem;
-}
-
-.partner a{
-  color:#666;
-  font-size:0.8rem;
-  text-decoration:none;
-}
-
-/* CTA */
-.cta{
-  padding:100px 5%;
-  text-align:center;
-  background:#111;
-}
-
-/* FOOTER */
-footer{
-  padding:60px 5%;
-  border-top:1px solid #222;
-  color:#666;
-}
-
-/* WHATS */
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:15px;
-  border-radius:50%;
   text-decoration:none;
 }
 </style>
@@ -270,371 +102,95 @@ footer{
   </div>
   <nav>
     <a href="#">Home</a>
-    <a href="#sobre">Quem Somos</a>
-    <a href="#parceiros">Nossos Parceiros</a>
     <a href="#servicos">Serviços</a>
-    <section id="soc-details" style="display:none; padding:80px 5%; border-top:1px solid #111;">
-
-  <h2 style="margin-bottom:20px;">SOC 24x7 – Security Operations Center</h2>
-
-  <p style="color:#aaa; max-width:900px; margin-bottom:40px;">
-    Nosso SOC 24x7 opera continuamente para detectar, analisar e responder a ameaças cibernéticas em tempo real.
-    Combinamos tecnologia avançada, inteligência de ameaças e especialistas altamente qualificados para proteger
-    ambientes críticos e garantir a continuidade do negócio.
-  </p>
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-  ">
-
-    <div class="soc-box">
-      <h3>Monitoramento Contínuo</h3>
-      <p>Visibilidade em tempo real de eventos de segurança.</p>
-    </div>
-
-    <div class="soc-box">
-      <h3>Detecção de Ameaças</h3>
-      <p>Identificação proativa com SIEM, EDR e inteligência.</p>
-    </div>
-
-    <div class="soc-box">
-      <h3>Resposta a Incidentes</h3>
-      <p>Contenção e mitigação imediata de ataques.</p>
-    </div>
-
-    <div class="soc-box">
-      <h3>Threat Intelligence</h3>
-      <p>Antecipação de ameaças com inteligência global.</p>
-    </div>
-
-    <div class="soc-box">
-      <h3>Automação</h3>
-      <p>Execução automatizada de playbooks.</p>
-    </div>
-
-    <div class="soc-box">
-      <h3>Relatórios</h3>
-      <p>Dashboards e indicadores executivos.</p>
-    </div>
-
-  </div>
-
-</section>
-    <a href="mailto:contato@defensys.com.br">Contato</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1 class="headline">
-    <span class="line">Hackers não escolhem o tamanho da empresa.</span>
-    <span class="line highlight">Nós garantimos que eles não escolham a sua.</span>
-  </h1>
-
-  <p>
-    Monitoramento contínuo, detecção avançada e resposta ativa para proteger pequenas e médias empresas contra ameaças reais.
-  </p>
+  <h1>Hackers não escolhem o tamanho da empresa.</h1>
+  <h1 style="color:#00F5E1;">Nós garantimos que eles não escolham a sua.</h1>
 
   <a href="https://wa.me/5511953424015" class="btn">Solicitar diagnóstico</a>
 </section>
 
-<section class="section">
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:40px;
-  ">
-
-    <!-- PROBLEMA -->
-    <div style="
-      border:1px solid #111;
-      padding:30px;
-      border-radius:8px;
-      position:relative;
-    ">
-      <span style="
-        position:absolute;
-        top:-10px;
-        left:20px;
-        background:#000;
-        padding:0 10px;
-        color:#ff4d4d;
-        font-size:12px;
-        letter-spacing:1px;
-      ">PROBLEMA</span>
-
-      <p style="color:#aaa; line-height:1.6;">
-        Empresas investem continuamente em soluções de segurança, mas seguem sem visibilidade real do que acontece em seus ambientes.
-        Em meio ao volume crescente de ameaças, decisões são tomadas sem clareza — e riscos críticos permanecem ocultos.
-      </p>
-    </div>
-
-    <!-- SOLUÇÃO -->
-    <div style="
-      border:1px solid #111;
-      padding:30px;
-      border-radius:8px;
-      position:relative;
-    ">
-      <span style="
-        position:absolute;
-        top:-10px;
-        left:20px;
-        background:#000;
-        padding:0 10px;
-        color:#00F5E1;
-        font-size:12px;
-        letter-spacing:1px;
-      ">SOLUÇÃO</span>
-
-      <p style="color:#aaa; line-height:1.6;">
-        A Defensys CyberTech traz visibilidade, inteligência e ação.
-        Atuamos com monitoramento contínuo, análise de ameaças e resposta estruturada, transformando dados em decisões rápidas e assertivas.
-      </p>
-    </div>
-
-    <!-- VALOR -->
-    <div style="
-      border:1px solid #111;
-      padding:30px;
-      border-radius:8px;
-      position:relative;
-    ">
-      <span style="
-        position:absolute;
-        top:-10px;
-        left:20px;
-        background:#000;
-        padding:0 10px;
-        color:#4dff88;
-        font-size:12px;
-        letter-spacing:1px;
-      ">VALOR</span>
-
-      <p style="color:#aaa; line-height:1.6;">
-        Mais do que proteger sistemas, garantimos continuidade do negócio, priorização correta de investimentos e redução real de riscos —
-        com segurança alinhada à estratégia da empresa.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-<section id="sobre" class="section">
-
-  <style>
-    .about-text{
-      max-width:900px;
-      color:#aaa;
-      margin-bottom:50px;
-      line-height:1.7;
-      font-size:1.05rem;
-    }
-
-    .framework-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:25px;
-    }
-
-    .framework-card{
-      border:1px solid #111;
-      padding:25px;
-      border-radius:10px;
-      position:relative;
-      background:linear-gradient(145deg,#050505,#000);
-      transition:0.35s;
-      overflow:hidden;
-    }
-
-    .framework-card::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(120deg,transparent,rgba(0,245,225,0.08),transparent);
-      opacity:0;
-      transition:0.4s;
-    }
-
-    .framework-card:hover::before{
-      opacity:1;
-    }
-
-    .framework-card:hover{
-      transform:translateY(-6px) scale(1.01);
-      border-color:var(--primary);
-      box-shadow:0 0 25px rgba(0,245,225,0.15);
-    }
-
-    .framework-card h3{
-      color:var(--primary);
-      margin-bottom:12px;
-      font-size:1.1rem;
-      letter-spacing:0.5px;
-    }
-
-    .framework-card p{
-      color:#aaa;
-      font-size:0.95rem;
-      line-height:1.6;
-    }
-
-    .framework-tag{
-      position:absolute;
-      top:12px;
-      right:15px;
-      font-size:10px;
-      color:#333;
-      letter-spacing:1px;
-    }
-
-    .framework-card:hover .framework-tag{
-      color:var(--primary);
-    }
-  </style>
-
-  <h2>Quem Somos</h2>
-
-  <p class="about-text">
-    A Defensys CyberTech nasceu em 2023 com o foco principal em solucionar problemas de segurança e compliance em pequenas e médias empresas.
-    Com um portfólio completo de soluções e serviços, atuamos como advisor estratégico dos nossos clientes quando o assunto é segurança cibernética.
-    <br><br>
-    Nossa missão é trazer resiliência cibernética, continuidade de negócios e competitividade, garantindo que a segurança esteja alinhada aos objetivos estratégicos da empresa.
-  </p>
-
-  <div class="framework-grid">
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Governança</h3>
-      <p>
-        Estabelecer estratégias, expectativas e políticas de gestão de risco de cibersegurança da organização,
-        integrando segurança aos objetivos de negócio.
-      </p>
-    </div>
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Identificação</h3>
-      <p>
-        Compreender ativos, vulnerabilidades e riscos cibernéticos para priorizar corretamente investimentos e esforços.
-      </p>
-    </div>
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Proteção</h3>
-      <p>
-        Implementar controles e soluções para prevenir ou reduzir o impacto de incidentes cibernéticos.
-      </p>
-    </div>
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Detecção</h3>
-      <p>
-        Identificar rapidamente eventos de segurança por meio de monitoramento contínuo e inteligência de ameaças.
-      </p>
-    </div>
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Resposta</h3>
-      <p>
-        Executar ações rápidas para conter, erradicar e analisar incidentes de segurança.
-      </p>
-    </div>
-
-    <div class="framework-card">
-      <span class="framework-tag">FRAMEWORK</span>
-      <h3>Recovery</h3>
-      <p>
-        Restaurar operações e garantir continuidade do negócio após incidentes, fortalecendo a resiliência.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-<section id="parceiros" class="section">
-  <h2>Nossos Parceiros</h2>
-  <p style="color:#aaa;margin-bottom:40px;">
-    Trabalhamos com tecnologias líderes globais para entregar soluções robustas e seguras.
-  </p>
-
-  <div class="partners-grid">
-
-    <div class="partner">
-      <img src="https://www.sophos.com/sites/default/files/2022-02/sophos-logo-white.png">
-      <p>Proteção de endpoint, firewall e MDR.</p>
-      <a href="https://www.sophos.com" target="_blank">sophos.com →</a>
-    </div>
-
-    <div class="partner">
-      <img src="https://www.fortinet.com/content/dam/fortinet/images/general/fortinet-logo.svg">
-      <p>Firewall NGFW e segurança de rede.</p>
-      <a href="https://www.fortinet.com" target="_blank">fortinet.com →</a>
-    </div>
-
-    <div class="partner">
-      <img src="https://www.cloudflare.com/img/logo-cloudflare-dark.svg">
-      <p>WAF, DDoS e Zero Trust.</p>
-      <a href="https://www.cloudflare.com" target="_blank">cloudflare.com →</a>
-    </div>
-
-    <div class="partner">
-      <img src="https://jumpcloud.com/assets/images/logo/jumpcloud-logo.svg">
-      <p>IAM, SSO e gestão de identidades.</p>
-      <a href="https://www.jumpcloud.com" target="_blank">jumpcloud.com →</a>
-    </div>
-
-    <div class="partner">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
-      <p>Segurança com Defender e Entra ID.</p>
-      <a href="https://www.microsoft.com" target="_blank">microsoft.com →</a>
-    </div>
-
-  </div>
-</section>
 <section id="servicos" class="section">
   <h2>Soluções</h2>
 
   <div class="services-grid">
-    <div class="s-item" onclick="toggleSOC()" style="cursor:pointer;">
-  <h2>SOC 24x7</h2>
-  <p>Monitoramento contínuo com detecção e resposta a incidentes.</p>
-  <span class="learn">Ver mais →</span>
-</div>
-    <div class="s-item"><h2>Resposta a Incidentes</h2><p>Resposta rápida.</p></div>
-    <div class="s-item"><h2>Pentest</h2><p>Simulação de ataques.</p></div>
-    <div class="s-item"><h2>Assessment</h2><p>Análise de riscos.</p></div>
-    <div class="s-item"><h2>DevSecOps</h2><p>Segurança no desenvolvimento.</p></div>
-    <div class="s-item"><h2>LGPD & GRC</h2><p>Compliance e governança.</p></div>
+
+    <div class="s-item" onclick="toggleSOC()">
+      <h2>SOC 24x7</h2>
+      <p>Monitoramento contínuo com detecção e resposta a incidentes.</p>
+    </div>
+
+    <div class="s-item">
+      <h2>Pentest</h2>
+      <p>Simulação de ataques.</p>
+    </div>
+
+    <div class="s-item">
+      <h2>Assessment</h2>
+      <p>Análise de riscos.</p>
+    </div>
+
   </div>
 </section>
 
-<section class="cta">
-  <h2>Sua empresa está realmente protegida?</h2>
-  <a href="https://wa.me/5511953424015" class="btn">Falar com especialista</a>
+<!-- SOC DETALHADO -->
+<section id="soc-details" style="display:none; padding:80px 5%; border-top:1px solid #111;">
+
+  <h2>SOC 24x7 – Security Operations Center</h2>
+
+  <p style="color:#aaa; max-width:800px; margin-bottom:40px;">
+    Nosso SOC 24x7 monitora, detecta e responde a ameaças em tempo real, garantindo visibilidade total e proteção contínua.
+  </p>
+
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+  ">
+
+    <div class="soc-box">
+      <h3>Monitoramento</h3>
+      <p>Visibilidade contínua de eventos.</p>
+    </div>
+
+    <div class="soc-box">
+      <h3>Detecção</h3>
+      <p>Identificação de ameaças em tempo real.</p>
+    </div>
+
+    <div class="soc-box">
+      <h3>Resposta</h3>
+      <p>Contenção imediata de incidentes.</p>
+    </div>
+
+    <div class="soc-box">
+      <h3>Threat Intelligence</h3>
+      <p>Antecipação de ataques.</p>
+    </div>
+
+  </div>
+
 </section>
 
-<footer>
-  <img src="Logo_C_02.png" style="height:50px;margin-bottom:20px;">
-  <p>© 2026 Defensys CyberTech</p>
-</footer>
+<a class="whatsapp" href="https://wa.me/5511953424015">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
 
-<a class="whatsapp" href="https://wa.me/5511953424015">💬</a>
 <script>
 function toggleSOC(){
   let soc = document.getElementById('soc-details');
-  soc.style.display = soc.style.display === 'none' ? 'block' : 'none';
 
-  if(soc.style.display === 'block'){
-    soc.scrollIntoView({behavior:'smooth'});
+  if(soc.style.display === "none"){
+    soc.style.display = "block";
+    soc.scrollIntoView({behavior:"smooth"});
+  } else {
+    soc.style.display = "none";
   }
 }
 </script>
+
 </body>
 </html>
