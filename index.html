@@ -118,6 +118,68 @@ nav a{
 .value h3{color:var(--primary);margin-bottom:10px;}
 
 /* SERVICES */
+<section id="soc-details" style="display:none; padding:80px 5%; border-top:1px solid #111;">
+
+  <h2 style="margin-bottom:20px;">SOC 24x7 – Security Operations Center</h2>
+
+  <p style="color:#aaa; max-width:900px; margin-bottom:40px;">
+    Nosso SOC 24x7 opera continuamente para detectar, analisar e responder a ameaças cibernéticas em tempo real.
+    Combinamos tecnologia avançada, inteligência de ameaças e especialistas altamente qualificados para proteger
+    ambientes críticos e garantir a continuidade do negócio.
+  </p>
+::contentReference[oaicite:0]{index=0}
+  <!-- IMAGENS -->
+<div style="
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  margin-top:40px;
+  .soc-box{
+  border:1px solid #111;
+  padding:25px;
+  border-radius:10px;
+  transition:0.3s;
+  background:#050505;
+}
+
+.soc-box:hover{
+  border-color:var(--primary);
+  transform:translateY(-5px);
+}
+">
+
+  <div class="soc-box">
+    <h3>Monitoramento Contínuo</h3>
+    <p>Visibilidade em tempo real de eventos de segurança, com correlação de logs e análise comportamental.</p>
+  </div>
+
+  <div class="soc-box">
+    <h3>Detecção de Ameaças</h3>
+    <p>Identificação proativa de atividades maliciosas utilizando SIEM, EDR e inteligência de ameaças.</p>
+  </div>
+
+  <div class="soc-box">
+    <h3>Resposta a Incidentes</h3>
+    <p>Atuação imediata para conter, erradicar e mitigar impactos de ataques cibernéticos.</p>
+  </div>
+
+  <div class="soc-box">
+    <h3>Threat Intelligence</h3>
+    <p>Uso de inteligência global para antecipar ameaças e fortalecer a postura de segurança.</p>
+  </div>
+
+  <div class="soc-box">
+    <h3>Automação e Orquestração</h3>
+    <p>Execução automatizada de playbooks para resposta rápida e consistente.</p>
+  </div>
+
+  <div class="soc-box">
+    <h3>Relatórios e Métricas</h3>
+    <p>Dashboards executivos com indicadores de risco, incidentes e maturidade.</p>
+  </div>
+
+</div>
+</section>
 .services-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -515,6 +577,15 @@ footer{
 </footer>
 
 <a class="whatsapp" href="https://wa.me/5511953424015">💬</a>
+<script>
+function toggleSOC(){
+  let soc = document.getElementById('soc-details');
+  soc.style.display = soc.style.display === 'none' ? 'block' : 'none';
 
+  if(soc.style.display === 'block'){
+    soc.scrollIntoView({behavior:'smooth'});
+  }
+}
+</script>
 </body>
 </html>
