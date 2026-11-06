@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b10">
+<meta name="description" content="Defensys CyberTech — segurança digital, infraestrutura e governança para blindar e fazer crescer negócios.">
+<title>Defensys CyberTech | Proteção para crescer</title>
+<link rel="icon" href="logo-defensys-icone.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050b10;--p1:#0b151c;--p2:#0e1c24;--cy:#00f5e1;--cy2:#55fff0;--w:#f4fbfc;--mu:#9aadb4;--ln:rgba(166,222,226,.14);--lt:#f2f6f7;--ink:#07141b;--ink2:#51656d;--max:1240px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--w);font:400 1rem/1.65 'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}img{max-width:100%}svg{display:block}
+.wrap{width:min(var(--max),calc(100% - 56px));margin:auto}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.1;letter-spacing:-.035em;margin:0}
+h1{font-size:clamp(2.6rem,5.6vw,4.9rem)}h2{font-size:clamp(1.9rem,3.6vw,3rem)}h3{font-size:1.18rem;letter-spacing:-.02em}
+.ey{display:inline-flex;align-items:center;gap:10px;color:var(--cy);font-size:.74rem;font-weight:700;letter-spacing:.17em;text-transform:uppercase}
+.ey:before{content:'';width:26px;height:2px;background:var(--cy)}
+.ac{color:var(--cy)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border:1px solid var(--cy);border-radius:4px;background:var(--cy);color:#031113;font-weight:700;font-size:.92rem;transition:.25s}
+.btn:hover{background:transparent;color:var(--cy)}
+.btn.o{background:transparent;color:var(--w);border-color:rgba(255,255,255,.28)}.btn.o:hover{border-color:var(--cy);color:var(--cy)}
+.sec{padding:112px 0}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:48px;margin-bottom:56px}
+.head h2{margin-top:16px}.head p{max-width:430px;margin:0;color:var(--mu)}
+.light{background:var(--lt);color:var(--ink)}.light .head p{color:var(--ink2)}.light .ac{color:#00877c}.light .ey{color:#00877c}.light .ey:before{background:#00877c}
+
+/* barra superior + header */
+.top{background:#02070a;border-bottom:1px solid var(--ln);font-size:.78rem;color:var(--mu)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;height:38px;gap:20px}
+.top a:hover{color:var(--cy)}.top .inc{color:var(--cy);font-weight:700}.top .r{display:flex;gap:26px}
+header{position:sticky;top:0;z-index:50;background:rgba(5,11,16,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--ln);transition:box-shadow .3s}
+header.sc{box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.hi{height:84px;display:flex;align-items:center;justify-content:space-between}
+.brand img{display:block;height:46px;width:auto}
+nav{display:flex;align-items:center;gap:36px}
+nav a{font-size:.88rem;font-weight:600;color:#d6e2e5;position:relative;padding:6px 0}
+nav a:not(.nc):after{content:'';position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--cy);transition:.25s}
+nav a:not(.nc):hover:after{width:100%}nav a:hover{color:var(--cy)}
+nav .nc{padding:11px 20px;border:1px solid var(--cy);border-radius:4px;color:var(--cy)}nav .nc:hover{background:var(--cy);color:#031113}
+.mt{display:none;background:none;border:1px solid var(--ln);color:#fff;border-radius:6px;padding:9px 14px;font:inherit;cursor:pointer}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:110px 0 120px;background:radial-gradient(ellipse at 78% 40%,rgba(0,245,225,.16),transparent 38%),linear-gradient(110deg,#050b10 15%,rgba(5,11,16,.9) 52%,rgba(5,11,16,.6)),url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=2200&q=80') center/cover}
+.hero:after{content:'';position:absolute;inset:auto 0 0;height:140px;background:linear-gradient(transparent,var(--bg))}
+.hg{position:relative;z-index:1;display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.hero h1{margin:24px 0}.hero p.lead{max-width:600px;color:#b4c5ca;font-size:1.15rem;margin:0 0 36px}
+.acts{display:flex;flex-wrap:wrap;gap:14px}
+.panel{background:linear-gradient(150deg,rgba(14,28,36,.92),rgba(8,17,23,.92));border:1px solid rgba(0,245,225,.28);border-radius:18px;padding:30px;box-shadow:0 30px 90px rgba(0,0,0,.5)}
+.panel .ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;font-size:.78rem;color:var(--mu);letter-spacing:.08em;text-transform:uppercase}
+.live{display:inline-flex;align-items:center;gap:8px;color:var(--cy)}.live i{width:8px;height:8px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 5px rgba(0,245,225,.14);animation:pl 2s infinite}
+@keyframes pl{50%{box-shadow:0 0 0 9px rgba(0,245,225,0)}}
+.bar{margin:17px 0}.bar div{display:flex;justify-content:space-between;font-size:.86rem;margin-bottom:8px;color:#d6e2e5}
+.bar b{display:block;height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden}.bar b i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,#00b3a4,var(--cy))}
+.panel .pf{margin-top:24px;padding-top:18px;border-top:1px solid var(--ln);font-size:.78rem;color:var(--mu)}
+
+/* faixa de provas */
+.proof{background:#081117;border-block:1px solid var(--ln)}
+.pg{display:grid;grid-template-columns:repeat(4,1fr)}
+.pi{padding:40px 24px;text-align:center;border-left:1px solid var(--ln)}.pi:first-child{border-left:0}
+.pn{font:800 clamp(2rem,3.4vw,3rem) Manrope;color:var(--cy);letter-spacing:-.05em;line-height:1}
+.pl2{font-size:.85rem;color:var(--mu);margin-top:10px}
+
+/* soluções */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{position:relative;padding:36px 32px;background:#fff;border:1px solid #dde6e9;border-radius:6px;transition:.3s;overflow:hidden}
+.card:before{content:'';position:absolute;left:0;top:0;height:3px;width:0;background:var(--cy);transition:.35s}
+.card:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(7,20,27,.14);border-color:transparent}.card:hover:before{width:100%}
+.ic{width:56px;height:56px;border-radius:12px;background:var(--bg);display:grid;place-items:center;margin-bottom:26px}
+.ic svg{width:28px;height:28px;stroke:var(--cy);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card p{color:var(--ink2);font-size:.95rem;margin:12px 0 0}
+.more{display:inline-flex;gap:8px;margin-top:24px;font-size:.85rem;font-weight:700;color:#00877c}.more:hover{gap:14px}.more{transition:.25s}
+
+/* metodologia */
+.mg{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--ln);border:1px solid var(--ln);border-radius:10px;overflow:hidden}
+.ms{padding:36px 32px;background:var(--p1);transition:.3s}.ms:hover{background:var(--p2)}
+.ms b{display:block;font:800 .74rem Manrope;letter-spacing:.14em;color:var(--cy);margin-bottom:16px}
+.ms p{color:var(--mu);font-size:.92rem;margin:12px 0 0}
+
+/* parceiros */
+.pt{background:#081117;border-block:1px solid var(--ln)}
+.ptg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.pr{height:96px;display:grid;place-items:center;border:1px solid var(--ln);border-radius:8px;background:rgba(255,255,255,.025);color:#c9d8db;font:800 .95rem Manrope;letter-spacing:.06em;transition:.25s}
+.pr:hover{border-color:var(--cy);color:var(--cy);background:rgba(0,245,225,.05)}
+.note{margin-top:20px;color:#6f858c;font-size:.78rem}
+
+/* cases */
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.case{background:#fff;border:1px solid #dde6e9;border-radius:6px;overflow:hidden;transition:.3s}.case:hover{transform:translateY(-6px);box-shadow:0 28px 60px rgba(7,20,27,.14)}
+.cv{height:190px;background:linear-gradient(135deg,rgba(5,11,16,.55),rgba(0,245,225,.2)),var(--i) center/cover}
+.cb{padding:28px}.tag{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#00877c}
+.cb h3{margin-top:10px}.cb p{color:var(--ink2);font-size:.92rem;margin:10px 0 0}
+
+/* por que */
+.wg{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.why{padding:30px 26px;border-top:2px solid var(--cy);background:linear-gradient(180deg,rgba(0,245,225,.06),transparent)}
+.why p{color:var(--mu);font-size:.9rem;margin:12px 0 0}
+
+/* cta */
+.cta{position:relative;overflow:hidden;padding:88px 0;background:radial-gradient(ellipse at 85% 50%,rgba(0,245,225,.2),transparent 45%),#09151c;border-block:1px solid var(--ln)}
+.cta img{position:absolute;right:6%;top:50%;transform:translateY(-50%);height:360px;opacity:.06;pointer-events:none}
+.ci{position:relative;display:flex;justify-content:space-between;align-items:center;gap:40px}.ci p{max-width:600px;color:var(--mu);margin:16px 0 0}
+
+/* footer */
+footer{background:#03080c;padding:76px 0 30px}
+.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:44px;padding-bottom:56px}
+.fg img{height:58px;width:auto;display:block;margin-bottom:20px}.fg p{color:var(--mu);font-size:.9rem;max-width:310px;margin:0}
+.fg h4{margin:0 0 18px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cy)}
+.fg a{display:block;color:#9aadb4;font-size:.9rem;margin:10px 0;transition:.2s}.fg a:hover{color:var(--cy);padding-left:4px}
+.lg{display:flex;justify-content:space-between;gap:20px;padding-top:24px;border-top:1px solid var(--ln);color:#6e838a;font-size:.78rem}
+.wa{position:fixed;right:24px;bottom:24px;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#20c96b;z-index:45;box-shadow:0 10px 35px rgba(0,0,0,.45);transition:.25s}.wa:hover{transform:scale(1.08)}.wa svg{width:30px;height:30px;fill:#fff}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+
+@media(max-width:1000px){.hg{grid-template-columns:1fr}.panel{max-width:520px}.cards,.cg{grid-template-columns:repeat(2,1fr)}.ptg{grid-template-columns:repeat(3,1fr)}.wg{grid-template-columns:repeat(2,1fr)}.fg{grid-template-columns:1fr 1fr}nav{gap:20px}}
+@media(max-width:760px){.wrap{width:calc(100% - 36px)}.top .r a:first-child,.top .l{display:none}.top .wrap{justify-content:center}.hi{height:72px}.brand img{height:40px}.mt{display:block}
+nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:6px;padding:20px 24px 26px;background:#071117;border-bottom:1px solid var(--ln)}nav.open{display:flex}nav a{padding:12px 0;font-size:1rem}nav .nc{text-align:center}
+.hero{padding:70px 0 90px}.sec{padding:76px 0}.head,.ci{display:block}.head p,.ci .btn{margin-top:20px}.pg{grid-template-columns:1fr 1fr}.pi{border-left:0;border-top:1px solid var(--ln);padding:28px 12px}.pi:nth-child(-n+2){border-top:0}
+.cards,.cg,.mg{grid-template-columns:1fr}.ptg{grid-template-columns:1fr 1fr}.pr{height:76px;font-size:.8rem}.wg{grid-template-columns:1fr}.fg{grid-template-columns:1fr 1fr;gap:34px 20px}.fg>div:first-child{grid-column:1/-1}.lg{display:block}.lg span{display:block;margin-top:6px}.cta img{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+.pr{height:auto;min-height:112px;gap:14px;padding:18px 10px;align-content:center;font:700 .74rem 'DM Sans';letter-spacing:.1em;text-transform:uppercase;cursor:pointer;color:#9aadb4}
+.pr img{height:34px;width:auto;max-width:78%;opacity:.85;transition:.25s}.pr:hover img,.pr.on img{opacity:1}
+.pr.on{border-color:var(--cy);color:var(--cy);background:rgba(0,245,225,.07);box-shadow:0 0 0 1px var(--cy) inset}
+.pr:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.pd{margin-top:22px;display:grid;grid-template-columns:96px 1fr;gap:30px;align-items:center;padding:34px;border:1px solid rgba(0,245,225,.28);border-radius:12px;background:linear-gradient(150deg,var(--p2),var(--p1))}
+.pd>img{width:96px;height:96px;object-fit:contain;padding:18px;border:1px solid var(--ln);border-radius:14px;background:rgba(255,255,255,.03)}
+.pd p{margin:10px 0 0;color:#b4c5ca;max-width:760px}.pd ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:18px 0 0}
+.pd li{padding:6px 14px;border:1px solid var(--ln);border-radius:30px;font-size:.78rem;color:var(--cy)}
+@media(max-width:760px){.pd{grid-template-columns:1fr;padding:24px}.pr{min-height:96px}}
+.pr svg{height:36px;width:36px;fill:#fff;opacity:.85;transition:.25s}.pr:hover svg,.pr:focus-visible svg{opacity:1;transform:scale(1.1)}
+.pr small{font:600 .68rem 'DM Sans';letter-spacing:.04em;text-transform:none;color:#6f858c;transition:.25s}.pr:hover small,.pr:focus-visible small{color:var(--cy)}
+.pr:hover{border-color:var(--cy);transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.4)}.pr{transition:.25s}
+dialog{width:min(560px,calc(100% - 32px));padding:40px 36px 34px;border:1px solid rgba(0,245,225,.4);border-radius:16px;background:linear-gradient(150deg,var(--p2),var(--p1));color:var(--w);box-shadow:0 40px 120px rgba(0,0,0,.7)}
+dialog::backdrop{background:rgba(2,7,10,.78);backdrop-filter:blur(6px)}dialog[open]{animation:dg .3s ease}@keyframes dg{from{opacity:0;transform:translateY(18px) scale(.98)}}
+.pml{width:84px;height:84px;display:grid;place-items:center;border:1px solid var(--ln);border-radius:16px;background:rgba(255,255,255,.04);margin-bottom:22px}.pml svg{width:44px;height:44px;fill:#fff}
+dialog p{margin:12px 0 0;color:#b4c5ca}dialog ul{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:20px 0 26px}dialog li{padding:6px 14px;border:1px solid var(--ln);border-radius:30px;font-size:.78rem;color:var(--cy)}
+dialog .x{position:absolute;top:14px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid var(--ln);background:none;color:#fff;font-size:1.4rem;line-height:1;cursor:pointer}dialog .x:hover{border-color:var(--cy);color:var(--cy)}
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+<span class="l">Segurança digital · Tecnologia · Governança</span>
+<div class="r"><a href="mailto:contato@defensys.com.br">contato@defensys.com.br</a><a class="inc" href="https://wa.me/5511953424015">Passou por um incidente? Fale agora →</a></div>
+</div></div>
+
+<header id="hd"><div class="wrap hi">
+<a class="brand" href="#inicio" aria-label="Defensys CyberTech — início"><img src="logo-defensys-branco.png" alt="Defensys CyberTech"></a>
+<button class="mt" aria-expanded="false" aria-controls="nv">Menu ☰</button>
+<nav id="nv" aria-label="Navegação principal"><a href="#solucoes">Soluções</a><a href="#metodo">Como trabalhamos</a><a href="#parceiros">Parceiros</a><a href="#resultados">Experiência</a><a href="#empresa">A Defensys</a><a href="#contato" class="nc">Falar com especialista</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="inicio"><div class="wrap hg">
+<div>
+<span class="ey">Proteção digital para operações de grande porte</span>
+<h1>Proteção para atuar.<br><span class="ac">Tranquilidade para crescer.</span></h1>
+<p class="lead">Cuidamos do que mantém a sua empresa funcionando. Conectamos estratégia, tecnologia e operação para diminuir riscos, blindar ambientes digitais e garantir a continuidade do seu negócio.</p>
+<div class="acts"><a class="btn" href="https://wa.me/5511953424015">Fale com nosso time de especialistas →</a><a class="btn o" href="#solucoes">Veja o que oferecemos</a></div>
+</div>
+<aside class="panel" aria-label="Exemplo de visão de postura de segurança">
+<div class="ph"><span>Postura de segurança</span><span class="live"><i></i>Visão integrada</span></div>
+<div class="bar"><div><span>Aplicações e APIs</span><span>Protegido</span></div><b><i style="width:92%"></i></b></div>
+<div class="bar"><div><span>Identidade e acessos</span><span>Governado</span></div><b><i style="width:84%"></i></b></div>
+<div class="bar"><div><span>Dados sensíveis</span><span>Classificado</span></div><b><i style="width:78%"></i></b></div>
+<div class="bar"><div><span>Detecção e resposta</span><span>Monitorado</span></div><b><i style="width:88%"></i></b></div>
+<div class="pf">Representação ilustrativa da integração entre proteção, governança e operação.</div>
+</aside>
+</div></section>
+
+<section class="proof"><div class="wrap pg">
+<div class="pi"><div class="pn">360°</div><div class="pl2">Enxergamos a segurança por inteiro</div></div>
+<div class="pi"><div class="pn">24×7</div><div class="pl2">Vigilância contínua quando você precisa</div></div>
+<div class="pi"><div class="pn">NIST</div><div class="pl2">Boas práticas baseadas em frameworks</div></div>
+<div class="pi"><div class="pn">End-to-end</div><div class="pl2">Do planejamento à execução</div></div>
+</div></section>
+
+<section class="sec light" id="solucoes"><div class="wrap">
+<div class="head rv"><div><span class="ey">Nosso portfólio</span><h2>Tecnologia que entrega resultado.<br><span class="ac">Segurança que dá base.</span></h2></div><p>Cada solução é moldada ao cenário, ao nível de maturidade e aos riscos da organização — do desenho da arquitetura à gestão no dia a dia.</p></div>
+<div class="cards">
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Cybersecurity</h3><p>Defesa de redes, dispositivos, aplicações, APIs, identidades e dados em múltiplas camadas, sempre com o objetivo de reduzir a exposição ao risco.</p><a class="more" href="#contato">Saiba mais →</a></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 010-8 5.5 5.5 0 0110.6 1.2A3.4 3.4 0 0117 18z"/></svg></div><h3>Cloud &amp; Infrastructure</h3><p>Arquiteturas seguras, redes conectadas, alta disponibilidade e evolução de ambientes locais, híbridos e multicloud.</p><a class="more" href="#contato">Saiba mais →</a></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><circle cx="12" cy="12" r="8"/></svg></div><h3>Managed Security Services</h3><p>Operação gerenciada que reforça o seu time, mantém os controles em dia e acelera a resposta quando um incidente acontece.</p><a class="more" href="#contato">Saiba mais →</a></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="8" cy="14" r="4"/><path d="M11 11l9-8M16 6l2 2M14 8l2 2"/></svg></div><h3>Identity &amp; Access</h3><p>Controle de identidades, contas privilegiadas e autenticação, com governança sobre quem acessa o quê: pessoas, sistemas e equipamentos.</p><a class="more" href="#contato">Saiba mais →</a></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.300 7-3V6M5 12v6c0 1.700 3.100 3 7 3s7-1.300 7-3v-6"/></svg></div><h3>Data Protection</h3><p>Classificação da informação, prevenção de vazamentos e proteção de dados sensíveis ao longo de todo o seu ciclo de vida.</p><a class="more" href="#contato">Saiba mais →</a></article>
+<article class="card rv"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg></div><h3>Governance, Risk &amp; Compliance</h3><p>Análise de riscos, políticas internas, conformidade regulatória e amadurecimento contínuo em segurança e privacidade.</p><a class="more" href="#contato">Saiba mais →</a></article>
+</div>
+</div></section>
+
+<section class="sec" id="metodo"><div class="wrap">
+<div class="head rv"><div><span class="ey">Como trabalhamos</span><h2>Do entendimento do risco<br>à <span class="ac">operação resiliente.</span></h2></div><p>Um caminho organizado e permanente para transformar investimento em tecnologia em proteção, continuidade e retorno para a empresa.</p></div>
+<div class="mg rv">
+<article class="ms"><b>01 · GOVERNAR</b><h3>Rumo e estratégia</h3><p>Prioridades, políticas, papéis e indicadores alinhados aos objetivos da empresa.</p></article>
+<article class="ms"><b>02 · IDENTIFICAR</b><h3>Visão clara do risco</h3><p>Mapeamento de ativos, análise de exposição, vulnerabilidades e dependências críticas.</p></article>
+<article class="ms"><b>03 · PROTEGER</b><h3>Arquitetura e controles</h3><p>Camadas de defesa que diminuem a superfície de ataque e resguardam as informações.</p></article>
+<article class="ms"><b>04 · DETECTAR</b><h3>Monitoração e análise</h3><p>Correlação de eventos e uso de inteligência para flagrar comportamentos suspeitos.</p></article>
+<article class="ms"><b>05 · RESPONDER</b><h3>Contenção e retomada</h3><p>Resposta estruturada a incidentes para conter danos e colocar a operação de volta no ar.</p></article>
+<article class="ms"><b>06 · EVOLUIR</b><h3>Evolução permanente</h3><p>Acompanhamento de resultados, revisão de controles e avanço constante da maturidade.</p></article>
+</div>
+</div></section>
+
+<section class="sec pt" id="parceiros"><div class="wrap">
+<div class="rv"><span class="ey">Ecossistema de tecnologia</span><h2 style="margin-top:16px">As ferramentas certas.<br><span class="ac">Integradas por quem entende.</span></h2>
+<p style="max-width:700px;color:var(--mu);margin:20px 0 0">Atuamos com fabricantes reconhecidos para escolher, integrar e operar as tecnologias que melhor respondem ao desafio de cada cliente. Clique em um logo para ver no que cada uma se destaca.</p></div>
+<div class="ptg rv" aria-label="Fabricantes do ecossistema Defensys"><button class="pr" type="button" data-k="microsoft" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 2h9.5v9.5H2zM12.5 2H22v9.5h-9.5zM2 12.5h9.5V22H2zM12.5 12.5H22V22h-9.5z"/></svg><span>Microsoft</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="cloudflare" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.5088 16.8447c.1475-.5068.0908-.9707-.1553-1.3154-.2246-.3164-.6045-.499-1.0615-.5205l-8.6592-.1123a.1559.1559 0 0 1-.1333-.0713c-.0283-.042-.0351-.0986-.021-.1553.0278-.084.1123-.1484.2036-.1562l8.7359-.1123c1.0351-.0489 2.1601-.8868 2.5537-1.9136l.499-1.3013c.0215-.0561.0293-.1128.0147-.168-.5625-2.5463-2.835-4.4453-5.5499-4.4453-2.5039 0-4.6284 1.6177-5.3876 3.8614-.4927-.3658-1.1187-.5625-1.794-.499-1.2026.119-2.1665 1.083-2.2861 2.2856-.0283.31-.0069.6128.0635.894C1.5683 13.171 0 14.7754 0 16.752c0 .1748.0142.3515.0352.5273.0141.083.0844.1475.1689.1475h15.9814c.0909 0 .1758-.0645.2032-.1553l.12-.4268zm2.7568-5.5634c-.0771 0-.1611 0-.2383.0112-.0566 0-.1054.0415-.127.0976l-.3378 1.1744c-.1475.5068-.0918.9707.1543 1.3164.2256.3164.6055.498 1.0625.5195l1.8437.1133c.0557 0 .1055.0263.1329.0703.0283.043.0351.1074.0214.1562-.0283.084-.1132.1485-.204.1553l-1.921.1123c-1.041.0488-2.1582.8867-2.5527 1.914l-.1406.3585c-.0283.0713.0215.1416.0986.1416h6.5977c.0771 0 .1474-.0489.169-.126.1122-.4082.1757-.837.1757-1.2803 0-2.6025-2.125-4.727-4.7344-4.727"/></svg><span>Cloudflare</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="fortinet" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M0 9.785h6.788v4.454H0zm8.666-6.33h6.668v4.453H8.666zm0 12.637h6.668v4.454H8.666zm8.522-6.307H24v4.454h-6.812zM2.792 3.455C1.372 3.814.265 5.404 0 7.425v.506h6.788V3.454zM0 16.091v.554c.24 1.926 1.276 3.466 2.624 3.9h4.188v-4.454zm24-8.184v-.506c-.265-1.998-1.372-3.587-2.792-3.972h-4.02v4.454H24zM21.376 20.57c1.324-.458 2.36-1.974 2.624-3.9v-.554h-6.812v4.454Z"/></svg><span>Fortinet</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="paloaltonetworks" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10.278 15.443 1.705 1.705-3.426 3.426-3.427-3.426 8.592-8.591-1.705-1.705 3.426-3.426 3.427 3.426-8.592 8.591zM0 12.017l3.426 3.426 8.591-8.59-3.426-3.427L0 12.017zm11.983 5.13 3.426 3.427L24 11.983l-3.426-3.426-8.591 8.59z"/></svg><span>Palo Alto Networks</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="checkpoint" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="5" fill="none" stroke="#fff" stroke-width="1.5"/><text x="12" y="16" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-weight="700" font-size="9" style="fill:#fff;stroke:none;letter-spacing:0;text-transform:none">CP</text></svg><span>Check Point</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="akamai" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.0548 0C6.384 0 .961 5.3802.961 12.0078.961 18.6354 6.3698 24 13.0548 24c.6168 0 .6454-.3572.0859-.5293-4.9349-1.5063-8.5352-6.069-8.5352-11.4629 0-5.4656 3.6725-10.0706 8.6934-11.5195C13.8153.3448 13.6716 0 13.0548 0Zm2.3242 1.8223c-5.2648 0-9.5254 4.2606-9.5254 9.5254 0 1.2193.2285 2.3818.6445 3.4433.1722.459.4454.4584.4024.0137-.0287-.3156-.0567-.6447-.0567-.9746 0-5.2648 4.2606-9.5254 9.5254-9.5254 4.9779 0 6.4698 2.2235 6.6563 2.08.2008-.1577-1.808-4.5624-7.6465-4.5624zm.4687 4.0703c-1.8622.0592-3.651.7168-5.1035 1.8554-.2582.2009-.1567.3284.1445.1993 2.4675-1.076 5.5812-1.1046 8.6368-.043 2.0514.7173 3.2413 1.7364 3.3418 1.6934.1578-.0718-1.1915-2.2226-3.6446-3.1407-1.1135-.4196-2.2576-.6-3.375-.5644z"/></svg><span>Akamai</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="f5" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12a11.943 11.943 0 002.336 7.1113c.509.004.8594-.111.8984-.33.046-.229.0068-.5825-.0332-.9395a55.067 55.067 0 01-.2344-7.4473c-.609.027-1.1547.055-1.6777.086.02-.471.046-.9188.084-1.3828.517-.05 1.064-.0936 1.666-.1446.026-.406.0568-.7983.0918-1.1953.27-2.43 2.828-3.9162 4.959-4.4902.946-.23 1.5245-.3022 1.9785-.3262.164-.005.3405-.0117.5175-.0117.442 0 .8899.0414 1.1739.2344.46.345.9135.6873 1.3965 1.0683.048.065.1024.1678-.0176.3438-.222.26-.4371.5084-.6621.7754-.13.157-.3454.1164-.5274.0664-.38-.194-.7462-.3728-1.1172-.5528-.672-.299-1.3666-.6061-2.1406-.5761-.483.039-.951.532-1 1.209a101.41 101.41 0 00-.1504 3.2285c1.343-.038 2.6837-.0624 4.0957-.0684l-.002.9453c-.46.206-.8954.413-1.3574.623-.953.011-1.8595.0202-2.7715.0352a125.13 125.13 0 00.1192 7.9317c.024.378.0424.7605.1504 1.0175.13.322.8798.5701 2.5098.6621.007.284.0153.5532.0253.8282-2.655-.077-5.205-.3302-7.248-.6992A11.962 11.962 0 0012 24c6.628 0 12-5.373 12-12a11.942 11.942 0 00-2.0957-6.7754c-.147.607-.2252 1.2378-.3672 1.8828-1.8-.234-3.9131-.4053-6.2871-.4883-.191.602-.3711 1.192-.5781 1.836 3.973.245 5.9048 1.2924 7.0508 2.5254 1.113 1.248 1.3501 2.6262 1.2851 3.9062-.143 2.081-1.0613 3.3971-2.3203 4.3711-1.274.96-2.8139 1.436-4.0469 1.539-1.819.137-4.2515-.2962-4.7695-.6132a178.03 178.03 0 01-.9492-2.2012c-.08-.166-.1294-.3371.0976-.5351.354-.339.6928-.6667 1.0508-1.0137.158-.155.3338-.2991.4668-.0781.489.755.9473 1.4477 1.4063 2.1367.522.77 1.3167 1.4695 3.0527 1.3535 1.459-.13 2.5675-1.2333 2.6855-2.4473.128-2.246-2.1446-3.8396-8.0546-4.3496a2571.27 2571.27 0 013.123-9.371c1.404.065 2.7043.1798 3.9453.3398.919.116 1.772.3287 2.627.4277A11.973 11.973 0 0012 0zm10.0195 21.1113c-.5006 0-.9082.4076-.9082.9082 0 .5007.4076.9082.9082.9082.5007 0 .9082-.4075.9082-.9082 0-.5006-.4075-.9082-.9082-.9082zm0 .127c.4318 0 .7793.3495.7793.7812a.7776.7776 0 01-.7793.7793c-.4317 0-.7812-.3475-.7812-.7793a.7809.7809 0 01.7812-.7812zm-.3652.2773v.9961h.1738v-.3926h.1387c.092 0 .1583.0112.1953.0332.062.037.0938.1146.0938.2286v.08l.002.0293a.07.07 0 01.0039.0118c0 .005-.0001.0068.0039.0098h.162l-.0058-.0137a.106.106 0 01-.0078-.0488.6846.6846 0 01-.004-.0743v-.0742a.276.276 0 00-.0527-.1543c-.037-.053-.0948-.0846-.1718-.0976A.408.408 0 0022.328 22c.066-.042.0977-.1103.0977-.1973 0-.124-.0503-.21-.1543-.252a.752.752 0 00-.2695-.035zm.1738.123h.1504a.45.45 0 01.211.0372c.042.024.0664.0735.0664.1445a.153.153 0 01-.1036.1563.451.451 0 01-.166.0214h-.1582z"/></svg><span>F5</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="sophos" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="5" fill="none" stroke="#fff" stroke-width="1.5"/><text x="12" y="16" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-weight="700" font-size="12" style="fill:#fff;stroke:none;letter-spacing:0;text-transform:none">S</text></svg><span>Sophos</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="trendmicro" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.38 0 0 5.37 0 12C0 14.45 .734 16.72 2 18.62C1.5 17.45 1.58 15.94 2.19 14.29L2.2 14.25L2.25 14.12L2.3 14L2.32 13.95C2.54 13.4 2.82 12.83 3.16 12.26C3.21 12.16 3.25 12.07 3.3 12L1.86 12L2.21 11.21C3.4 10.88 5.38 10.22 7.27 8.39L7.32 8.39H8.32L7.03 11.14L9.1 11.14L8.72 11.96L6.66 11.96S5.69 13.9 5.36 15.28C5.11 16.82 5.36 18 6.74 18.41C7.59 18.67 8.66 18.61 9.81 18.29C12.5 17.45 15.34 15.62 17.43 13.18C20.87 9.19 20.94 5.1 17.58 4.05C15.43 3.38 12.39 4.13 9.58 5.8C13.08 3.54 16.94 2.5 19.59 3.31C20.09 3.46 20.53 3.68 20.89 3.94A11.97 11.97 0 0 0 12 0M22.17 5.63C23 7.81 21.97 11.07 19.2 14.29C15.04 19.13 8.47 22.05 4.5 20.83A4.46 4.46 0 0 1 3.24 20.21A11.96 11.96 0 0 0 12 24C18.63 24 24 18.63 24 12C24 9.66 23.33 7.5 22.17 5.63Z"/></svg><span>Trend Micro</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="cyberark" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1.5" y="1.5" width="21" height="21" rx="5" fill="none" stroke="#fff" stroke-width="1.5"/><text x="12" y="16" text-anchor="middle" font-family="DM Sans,Arial,sans-serif" font-weight="700" font-size="9" style="fill:#fff;stroke:none;letter-spacing:0;text-transform:none">CA</text></svg><span>CyberArk</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="okta" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.389 0 0 5.35 0 12s5.35 12 12 12 12-5.35 12-12S18.611 0 12 0zm0 18c-3.325 0-6-2.675-6-6s2.675-6 6-6 6 2.675 6 6-2.675 6-6 6z"/></svg><span>Okta</span><small>Ver capacidades +</small></button><button class="pr" type="button" data-k="qualys" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.9986 0C5.4353 0 2.1382 3.5117 2.1382 3.5117s-.3775 2.5993-.1366 7.8332C2.3654 19.2513 11.999 24.0005 11.9999 24c.001-.0005 9.6347-4.7488 9.9985-12.6551.2408-5.2339-.1364-7.8332-.1364-7.8332S18.562 0 11.9986 0zm-.6782 2.9194a7.3657 7.3657 0 0 1 8.0454 7.3343 7.1158 7.1158 0 0 1-2.7712 5.6342c-1.1788-.108-2.4098-.4423-2.9676-.7605 1.4379-.9177 3.3036-2.7033 3.3036-4.8737a4.9361 4.9361 0 0 0-4.9305-4.9305c-2.7165 0-4.9266 2.2743-4.9266 5.0698 0 2.332 1.2355 4.1624 3.6718 5.4404 1.5943.8363 3.9724 1.449 6.4852 1.7723-.418.6225-1.533 1.686-2.1847 2.0462-3.0087-.4934-5.6513-1.5354-7.4578-3.0964-1.9323-1.6699-2.9536-3.8488-2.9536-6.3018a7.3657 7.3657 0 0 1 6.686-7.3343Z"/></svg><span>Qualys</span><small>Ver capacidades +</small></button></div>
+<dialog id="pm" aria-labelledby="pmn"><button class="x" type="button" aria-label="Fechar">×</button><div class="pml" id="pml"></div><h3 id="pmn"></h3><p id="pmt"></p><ul id="pmc"></ul><a class="btn" href="#contato">Falar sobre esta tecnologia →</a></dialog>
+<p class="note">Marcas pertencentes aos respectivos fabricantes, citadas para indicar tecnologias com as quais a Defensys atua. Níveis de parceria e certificações só devem ser divulgados após validação formal.</p>
+</div></section>
+
+<section class="sec light" id="resultados"><div class="wrap">
+<div class="head rv"><div><span class="ey">Experiência na prática</span><h2>Projetos desenhados para<br><span class="ac">problemas de verdade.</span></h2></div><p>Áreas em que unimos arquitetura, tecnologia e operação para entregar resultados que podem ser medidos.</p></div>
+<div class="cg">
+<article class="case rv"><div class="cv" style="--i:url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=75')"></div><div class="cb"><span class="tag">Segurança de aplicações</span><h3>Evolução de WAF e defesa de APIs</h3><p>Desenho de proteção para aplicações digitais, com administração de regras, controle de bots e visibilidade do tráfego.</p></div></article>
+<article class="case rv"><div class="cv" style="--i:url('https://images.unsplash.com/photo-1551703599-6b3e8379aa8d?auto=format&fit=crop&w=900&q=75')"></div><div class="cb"><span class="tag">Proteção de dados</span><h3>Governança e prevenção de vazamento de dados</h3><p>Montagem de controles de classificação, políticas e salvaguarda das informações corporativas.</p></div></article>
+<article class="case rv"><div class="cv" style="--i:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=75')"></div><div class="cb"><span class="tag">Centro de operações</span><h3>Mais capacidade de detectar e responder</h3><p>Telemetria, processos e ferramentas integrados para dar mais visibilidade e agilidade diante de ameaças.</p></div></article>
+</div>
+</div></section>
+
+<section class="sec" id="empresa"><div class="wrap">
+<div class="head rv"><div><span class="ey">Por que escolher a Defensys</span><h2>Além da tecnologia.<br><span class="ac">Parceria com o seu negócio.</span></h2></div><p>A Defensys CyberTech é uma parceira estratégica que aproxima segurança da informação, infraestrutura e metas da empresa.</p></div>
+<div class="wg rv">
+<article class="why"><h3>Olhar estratégico</h3><p>Decisões de segurança guiadas pelo contexto, pelo impacto e pelas prioridades da empresa.</p></article>
+<article class="why"><h3>Neutralidade técnica</h3><p>Indicações baseadas na real necessidade do cliente e no encaixe da solução.</p></article>
+<article class="why"><h3>Visão conectada</h3><p>Arquitetura e operação trabalhando juntas para simplificar o ambiente e fechar brechas.</p></article>
+<article class="why"><h3>Presença próxima</h3><p>Trabalho em conjunto, comunicação transparente e foco em gerar valor.</p></article>
+</div>
+</div></section>
+
+<section class="cta" id="contato"><img src="logo-defensys-icone.png" alt=""><div class="wrap ci">
+<div><span class="ey">Vamos conversar</span><h2 style="margin-top:16px">Pronto para elevar a proteção<br><span class="ac">do seu negócio?</span></h2><p>Compartilhe o seu cenário. Nosso time ajuda a definir os melhores caminhos e as prioridades para proteger a sua empresa.</p></div>
+<a class="btn" href="https://wa.me/5511953424015">Conversar com a Defensys →</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><img src="logo-defensys-branco.png" alt="Defensys CyberTech"><p>Segurança digital, tecnologia e governança para resguardar operações e dar impulso aos negócios.</p></div>
+<div><h4>Soluções</h4><a href="#solucoes">Cybersecurity</a><a href="#solucoes">Cloud &amp; Infrastructure</a><a href="#solucoes">Managed Services</a><a href="#solucoes">Identity &amp; Access</a></div>
+<div><h4>Empresa</h4><a href="#empresa">Quem somos</a><a href="#metodo">Como trabalhamos</a><a href="#parceiros">Parceiros</a><a href="#contato">Contato</a></div>
+<div><h4>Contato</h4><a href="mailto:contato@defensys.com.br">contato@defensys.com.br</a><a href="https://wa.me/5511953424015">+55 11 95342-4015</a><a href="#contato">Brasil</a></div>
+</div>
+<div class="lg"><span>© 2026 Defensys CyberTech. Todos os direitos reservados.</span><span>Proteção para atuar. Tranquilidade para crescer.</span></div>
+</div></footer>
+
+<a class="wa" href="https://wa.me/5511953424015" aria-label="Fale com a Defensys pelo WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.100-1.300A10 10 0 1012 2zm5.200 14.100c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.5c.2 0 .4 0 .6.500l.8 1.900c.1.200.1.400 0 .6l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.7-.1l1-1.200c.2-.3.400-.2.700-.1l1.800.9c.3.100.5.200.6.300.1.200.1.800-.1 1.300z"/></svg></a>
+
+<script>
+const b=document.querySelector('.mt'),n=document.getElementById('nv'),h=document.getElementById('hd');
+b.addEventListener('click',()=>{const o=n.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false')}));
+addEventListener('scroll',()=>h.classList.toggle('sc',scrollY>20),{passive:true});
+const r=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});r.forEach((el,i)=>{el.style.transitionDelay=(i%3)*.08+'s';io.observe(el)})}else r.forEach(el=>el.classList.add('in'));
+const D={"microsoft":{"n":"Microsoft","t":"Plataforma que reúne identidade, endpoints, nuvem e dados em um só ecossistema, com ferramentas de detecção, resposta e governança integradas.","c":["Identidade e acesso","XDR e SIEM","Proteção de dados"]},"cloudflare":{"n":"Cloudflare","t":"Rede global de borda que protege e acelera aplicações, com mitigação de DDoS, WAF, controle de bots e acesso Zero Trust.","c":["WAF e DDoS","Zero Trust / SASE","Performance e CDN"]},"fortinet":{"n":"Fortinet","t":"Segurança de rede integrada em uma única arquitetura, com firewalls de nova geração, SD-WAN, acesso seguro e detecção de ameaças.","c":["Firewall NGFW","SD-WAN","Security Fabric"]},"paloaltonetworks":{"n":"Palo Alto Networks","t":"Portfólio focado em prevenção, com firewalls de nova geração, segurança em nuvem e operações de segurança automatizadas.","c":["Firewall NGFW","Segurança em nuvem","XDR e SOC"]},"checkpoint":{"n":"Check Point","t":"Arquitetura unificada para prevenir ataques em redes, nuvem, endpoints e dispositivos móveis, com gestão centralizada.","c":["Prevenção de ameaças","Segurança de rede","Nuvem e mobile"]},"akamai":{"n":"Akamai","t":"Proteção de aplicações e APIs na borda, com WAF, mitigação de DDoS, gestão de bots, acesso Zero Trust e entrega de conteúdo.","c":["WAF e APIs","Gestão de bots","Acesso Zero Trust"]},"f5":{"n":"F5","t":"Entrega e segurança de aplicações em qualquer ambiente, com balanceamento de carga, WAF e proteção de APIs.","c":["Application delivery","WAF","Proteção de APIs"]},"sophos":{"n":"Sophos","t":"Proteção de endpoints e redes com detecção e resposta gerenciadas, firewalls e inteligência de ameaças em uma plataforma única.","c":["Endpoint","Firewall","MDR e XDR"]},"trendmicro":{"n":"Trend Micro","t":"Plataforma de cibersegurança com visão unificada de risco, proteção de endpoints, nuvem e e-mail, além de detecção e resposta.","c":["XDR","Segurança em nuvem","Endpoint"]},"cyberark":{"n":"CyberArk","t":"Referência em segurança de identidade, com gestão de acessos privilegiados, proteção de segredos e controle de credenciais.","c":["Acesso privilegiado","Gestão de segredos","Governança de identidade"]},"okta":{"n":"Okta","t":"Plataforma de identidade que centraliza autenticação, login único e múltiplos fatores para colaboradores, parceiros e clientes.","c":["SSO e MFA","Identidade de clientes","Ciclo de vida de contas"]},"qualys":{"n":"Qualys","t":"Plataforma em nuvem para descobrir ativos, gerenciar vulnerabilidades, medir a postura de segurança e apoiar a conformidade.","c":["Gestão de vulnerabilidades","Postura em nuvem","Conformidade"]}};
+const dl=document.getElementById('pm');
+document.querySelectorAll('.pr').forEach(b=>b.addEventListener('click',()=>{const d=D[b.dataset.k];
+pml.innerHTML=b.querySelector('svg').outerHTML;pmn.textContent=d.n;pmt.textContent=d.t;pmc.innerHTML='';
+d.c.forEach(x=>{const l=document.createElement('li');l.textContent=x;pmc.appendChild(l)});dl.showModal()}));
+dl.querySelector('.x').addEventListener('click',()=>dl.close());
+dl.addEventListener('click',e=>{if(e.target===dl)dl.close()});
+dl.querySelector('.btn').addEventListener('click',()=>dl.close());
+</script>
+</body>
+</html>
